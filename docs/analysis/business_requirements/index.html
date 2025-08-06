@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-analysis/business_requirements" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Business Requirements | E.C.O.</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rares-vsl.github.io/ecodocumentation/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rares-vsl.github.io/ecodocumentation/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rares-vsl.github.io/ecodocumentation/docs/analysis/business_requirements"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Business Requirements | E.C.O."><meta data-rh="true" name="description" content="1. The administrator must be able to configure a house by defining the floor plan, zones, and smart furniture hookup."><meta data-rh="true" property="og:description" content="1. The administrator must be able to configure a house by defining the floor plan, zones, and smart furniture hookup."><link data-rh="true" rel="icon" href="/ecodocumentation/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rares-vsl.github.io/ecodocumentation/docs/analysis/business_requirements"><link data-rh="true" rel="alternate" href="https://rares-vsl.github.io/ecodocumentation/docs/analysis/business_requirements" hreflang="en"><link data-rh="true" rel="alternate" href="https://rares-vsl.github.io/ecodocumentation/docs/analysis/business_requirements" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Analysis","item":"https://rares-vsl.github.io/ecodocumentation/docs/category/analysis"},{"@type":"ListItem","position":2,"name":"Business Requirements","item":"https://rares-vsl.github.io/ecodocumentation/docs/analysis/business_requirements"}]}</script><link rel="stylesheet" href="/ecodocumentation/assets/css/styles.a0bbca18.css">
+<script src="/ecodocumentation/assets/js/runtime~main.a4a8bcfd.js" defer="defer"></script>
+<script src="/ecodocumentation/assets/js/main.744bbb53.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ecodocumentation/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ecodocumentation/"><div class="navbar__logo"><img src="/ecodocumentation/img/logo.svg" alt="E.C.O." class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ecodocumentation/img/logo.svg" alt="E.C.O." class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">E.C.O.</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ecodocumentation/docs/intro">Report</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ecodocumentation/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/ecodocumentation/docs/category/analysis">Analysis</a><button aria-label="Collapse sidebar category &#x27;Analysis&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ecodocumentation/docs/analysis/business_requirements">Business Requirements</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ecodocumentation/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/ecodocumentation/docs/category/analysis"><span>Analysis</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Business Requirements</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Business requirements</h1></header>
+<ol>
+<li>The administrator must be able to <strong>configure a house</strong> by defining the floor plan, zones, and smart furniture hookup.</li>
+<li>The platform must display an <strong>interactive map</strong> with real-time status of a smart furniture hookup.</li>
+<li>The platform must provide <strong>real-time consumption metrics</strong> of current utility consumption.</li>
+<li>The platform must notify users when <strong>forecasted consumption exceeds</strong> predefined thresholds through an automatic alert system.</li>
+<li>The platform must promptly notify users when <strong>consumption exceeds</strong> predefined thresholds through an automatic alert system.</li>
+<li>The platform must allow <strong>filtering of consumption</strong> charts by individual users.</li>
+<li>The platform must allow access the consumption of <strong>individual zones</strong></li>
+<li>The platform must allow users to <strong>export</strong> both the data related to <strong>devices</strong> and the <strong>map</strong>.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases-platform-setup">Use Cases Platform Setup<a href="#use-cases-platform-setup" class="hash-link" aria-label="Direct link to Use Cases Platform Setup" title="Direct link to Use Cases Platform Setup">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="admin-authentication">Admin Authentication<a href="#admin-authentication" class="hash-link" aria-label="Direct link to Admin Authentication" title="Direct link to Admin Authentication">​</a></h3>
+<ol>
+<li>
+<p><strong>Admin Authentication (First-Time Access)</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong>  The admin authenticates to access the system for the first time.</li>
+<li><strong>Trigger:</strong> The user accesses the platform without an existing authentication session.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The platform is accessed for the first time.</li>
+<li>A pre-configured admin account with known credentials exists.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The admin is successfully authenticated and can proceed with the system setup process.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The user navigates to the login page.</li>
+<li>The user enters the pre-configured credentials.</li>
+<li>The user submits the login form.</li>
+<li>The system validates the credentials.</li>
+<li>The system authenticates the user and establishes an authenticated session.</li>
+</ol>
+</li>
+<li><strong>Exception Scenario:</strong>
+<ul>
+<li><strong>Step 4:</strong> If the user enters invalid credentials, the system displays an error message and prompts the user to re-enter the information.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Logout during setup</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin logs out of the platform during the setup process.</li>
+<li><strong>Trigger:</strong> The admin clicks the logout button at any point during the setup phase.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and currently in the setup process.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The session is terminated.</li>
+<li>The admin is redirected to the login page.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin clicks the &quot;Logout&quot; button.</li>
+<li>The system terminates the session.</li>
+<li>The system redirects the admin to the login page.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="floor-plan-step">Floor plan step<a href="#floor-plan-step" class="hash-link" aria-label="Direct link to Floor plan step" title="Direct link to Floor plan step">​</a></h3>
+<ol>
+<li>
+<p><strong>Upload Floor Plan</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin uploads a digital floor plan (SVG format) to initiate the setup process.</li>
+<li><strong>Trigger:</strong> The authenticated admin accesses the platform while on the “Upload Floor Plan” step of the setup.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>The SVG file representing the floor plan is already available in the admin’s file system.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The floor plan is successfully stored.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Upload Floor Plan&quot; step page.</li>
+<li>The admin clicks the “Select file” button.</li>
+<li>The system prompts the admin to provide a digital floor plan in SVG format.</li>
+<li>The admin selects an SVG file from the local system.</li>
+<li>The system uploads and renders a preview of the file.</li>
+<li>The admin confirms the upload.</li>
+<li>The system saves the floor plan.</li>
+</ol>
+</li>
+<li><strong>Exception Scenario:</strong></li>
+<li><strong>Step 4:</strong> If the uploaded file is not in SVG format or is invalid, the system displays an error message and prompts the admin to upload a valid file.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reupload Floor Plan</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin reuploads a digital floor plan (SVG format), replacing the existing one.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Upload new floor plan” button.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>A floor plan has already been uploaded and saved previously.</li>
+<li>The new SVG file is available in the admin&#x27;s local file system.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The new floor plan replaces the previous one.</li>
+<li>All existing zones and hookups associated with the previous floor plan are deleted.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Upload Floor Plan&quot; step page.</li>
+<li>The admin clicks the “Upload new floor plan” button.</li>
+<li>The system displays a confirmation prompt, notifying the admin that reuploading the floor plan will delete all defined zones and smart utility hookups.</li>
+<li>The admin selects an SVG file from the local system and confirms the reupload.</li>
+<li>The system uploads and renders a preview of the file.</li>
+<li>The admin confirms the upload.</li>
+<li>The system saves the floor plan.</li>
+</ol>
+</li>
+<li><strong>Exception Scenario:</strong>
+<ul>
+<li><strong>Step 4:</strong> If the uploaded file is not in SVG format or is invalid, the system displays an error message and prompts the admin to upload a valid file.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="navigation-between-setup-steps">Navigation Between Setup Steps<a href="#navigation-between-setup-steps" class="hash-link" aria-label="Direct link to Navigation Between Setup Steps" title="Direct link to Navigation Between Setup Steps">​</a></h3>
+<ol>
+<li><strong>Navigate Between Setup Steps</strong>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin moves back and forth between setup sections without losing progress.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Previous” button or on a step on the step indicator.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The system navigates to the selected setup step.</li>
+<li>Data from previous steps is preserved and editable.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin clicks the “Previous” button.</li>
+<li>The system navigates to the selected step.</li>
+<li>Previously entered data is still available for review or modification.</li>
+</ol>
+</li>
+<li><strong>Exception Scenario:</strong>
+<ul>
+<li>If there is unsaved information in the current step, it will be lost. The system displays a warning.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="zone-management">Zone management<a href="#zone-management" class="hash-link" aria-label="Direct link to Zone management" title="Direct link to Zone management">​</a></h3>
+<ol>
+<li>
+<p><strong>Create Zone on Floor Plan</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin creates zones by drawing polygons on the uploaded floor plan, naming each zone and customizing its color.</li>
+<li><strong>Trigger:</strong> The authenticated admin accesses the platform while on the “Create Zones” step of the setup.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>An SVG floor plan has been uploaded to the system.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>A new zone is added to the floor plan with a defined shape, name, and color.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Zones&quot; step page.</li>
+<li>The admin clicks “Add New Zone.”</li>
+<li>The system opens a zone creation form.</li>
+<li>The admin draws a polygon on the map.</li>
+<li>The admin enters a zone name.</li>
+<li>The admin clicks the “Create” button.</li>
+<li>The system validates the provided information.</li>
+<li>The system adds the zone to the floor plan.</li>
+<li>The system saves the zone and updates the floor plan.</li>
+</ol>
+</li>
+<li><strong>Alternative Paths:</strong>
+<ul>
+<li><strong>Between Steps 4 and 7 – The admin chooses a zone color:</strong>
+<ul>
+<li>The admin selects a different color.</li>
+<li>If the polygon was already drawn, it updates with the new color.</li>
+<li>Continue from Step 8.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>At Step 5 – The admin resizes or deletes the polygon to draw a new one:</strong>
+<ul>
+<li>The admin adjusts or removes the current polygon.</li>
+<li>Return to Step 5.</li>
+</ul>
+</li>
+<li><strong>Exception Scenarios:</strong>
+<ul>
+<li>If the drawn zone overlaps with an existing one, the system displays an error and prevents confirmation until the overlap is resolved.</li>
+<li>The admin discards the zone. The system returns to the &quot;Create Zones&quot; step page.</li>
+<li>The admin skips this phase entirely.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Edit Existing Zone</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the “Create Zones” step of the setup, modifies a previously created zone by changing its name, shape, or color.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Edit” button of a zone in the list of zones.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated.</li>
+<li>At least one zone has already been created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected zone is updated with the new properties.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Zones&quot; step page.</li>
+<li>The admin locates the zone to be edited in the list.</li>
+<li>The admin clicks on the &quot;Edit&quot; button/icon associated with the zone in the list of created zones.</li>
+<li>The system opens an edit form pre-populated with the zone’s current data.</li>
+<li>The admin edits the name, color, and/or shape.</li>
+<li>The admin confirms the changes.</li>
+<li>The system updates the zone and reflects the changes on the map.</li>
+</ol>
+</li>
+<li><strong>Exception Scenarios:</strong>
+<ul>
+<li>The edited shape overlaps with another zone. The system shows an error and prevents saving until the overlap is resolved.</li>
+<li>The admin can discard the changes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Delete Zone</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the “Create Zones” step of the setup, deletes an existing zone.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Delete” button of a zone in the list of zones.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated.</li>
+<li>At least one zone has already been created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected zone is removed from the system.</li>
+<li>The selected zone is removed from the floor plan, and all its associated Smart Furniture Hookups are reassigned to the floor plan.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Zones&quot; step page.</li>
+<li>The admin locates the zone to be deleted in the list of zones.</li>
+<li>The admin clicks the “Delete” button/icon associated with the zone.</li>
+<li>The system displays a confirmation prompt, notifying the admin that deleting the zone will assign all Smart Furniture Hookups associated with it to the floor map.</li>
+<li>The admin confirms the deletion.</li>
+<li>The system removes the zone and all its hookups from the map.</li>
+<li>The system updates the zones list and the interactive map to reflect the deletion.</li>
+</ol>
+</li>
+<li><strong>Exception Scenario:</strong>
+<ul>
+<li>The admin can discard the changes.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="smart-furniture-hookups-management">Smart Furniture Hookups Management<a href="#smart-furniture-hookups-management" class="hash-link" aria-label="Direct link to Smart Furniture Hookups Management" title="Direct link to Smart Furniture Hookups Management">​</a></h3>
+<ol>
+<li>
+<p><strong>Create Smart Furniture Hookups</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin assigns a smart furniture hookup to the floor map by providing its name and endpoint within the setup process.</li>
+<li><strong>Trigger:</strong> The authenticated admin accesses the platform while on the “Create Smart Furniture Hookups” step of the setup.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>The admin knows the endpoint of the smart furniture hookup.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>A new utility hookup is created.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Smart Furniture Hookups&quot; step page.</li>
+<li>The admin clicks the &quot;Create New Hook-Up&quot; button.</li>
+<li>The system opens a hookup creation form.</li>
+<li>A default icon appears on the map within the selected zone.</li>
+<li>The admin is prompted to enter the hookup’s name and endpoint.</li>
+<li>The admin adjusts the hookup’s position by dragging it.</li>
+<li>Once satisfied with the placement and details, the admin clicks the &quot;Done&quot; button.</li>
+<li>The system validates the data.</li>
+<li>The system saves the hookup information and updates the interactive map.</li>
+</ol>
+</li>
+<li><strong>Alternative Path:</strong>
+<ul>
+<li>Step 6: If the position is within a zone, the system associates the smart furniture hookup with that zone.</li>
+</ul>
+</li>
+<li><strong>Exception Scenario:</strong>
+<ul>
+<li>If the entered endpoint is not reachable or is invalid, the system displays a warning message indicating that the endpoint is unreachable.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Edit Smart Furniture Hookup</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the &quot;Create Smart Furniture Hookups&quot; step of the setup, modifies a previously created hookup by changing its name or endpoint.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Edit” button of a hookup in the list of hookups.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated.</li>
+<li>At least one hookup has already been created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected hookup is updated with the new properties.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Smart Furniture Hookups&quot; step page.</li>
+<li>The admin locates the hookup to be edited in the list.</li>
+<li>The admin clicks the &quot;Edit&quot; button/icon associated with the hookup.</li>
+<li>The system opens an edit form pre-populated with the hookup’s current data.</li>
+<li>The admin edits the name and/or endpoint.</li>
+<li>The admin confirms the changes.</li>
+<li>The system updates the hookup and reflects the changes on the map.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Delete Existing Utility Hookups</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the “Create Smart Furniture Hookups” step of the setup, deletes an existing hookup.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Delete” button of a hookup in the list of hookups.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated.</li>
+<li>At least one hookup has already been created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected hookup is removed from the system.</li>
+<li>The selected hookup is removed from the floor plan.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Smart Furniture Hookups&quot; step page.</li>
+<li>The admin locates the hookup to be deleted in the list of hookups.</li>
+<li>The admin clicks the &quot;Delete&quot; button/icon associated with the hookup.</li>
+<li>The system displays a confirmation prompt.</li>
+<li>The admin confirms the deletion.</li>
+<li>The system removes the hookup from the floor plan.</li>
+<li>The system updates the hookups list and the interactive map to reflect the deletion.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="set-the-thresholds">Set the thresholds<a href="#set-the-thresholds" class="hash-link" aria-label="Direct link to Set the thresholds" title="Direct link to Set the thresholds">​</a></h3>
+<ol>
+<li>
+<p><strong>Setup Consumption Thresholds</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the “Setup Thresholds” step of the setup, configures alert thresholds for each utility (electricity, gas, water) by enabling a threshold for a resource and entering a numeric limit.</li>
+<li><strong>Trigger:</strong> The authenticated admin reaches the “Setup Thresholds” step of the setup.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>For every resource where a threshold was enabled, a valid threshold value is saved.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Setup Thresholds&quot; step page.</li>
+<li>The admin toggles the threshold switch for a resource.</li>
+<li>The system enables the input field for the selected resource.</li>
+<li>The admin enters a numeric threshold.</li>
+<li>The admin repeats steps 2–4 for each applicable resource.</li>
+<li>The admin clicks the &quot;Done&quot; button.</li>
+<li>The system validates the data.</li>
+<li>The system saves the thresholds.</li>
+</ol>
+</li>
+<li><strong>Alternative Path:</strong>
+<ul>
+<li>The admin sets the threshold only for a subset of the available resources.</li>
+</ul>
+</li>
+<li><strong>Exception Scenario:</strong>
+<ul>
+<li>The data provided is invalid. The system displays an error message and prevents saving.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Edit Threshold Value</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the &quot;Setup Thresholds” step of the setup, modifies a previously configured threshold by changing its value.</li>
+<li><strong>Trigger:</strong> The admin clicks the input field of the resource.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>At least one resource has a threshold.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected threshold value is updated.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Setup Thresholds&quot; step page.</li>
+<li>The admin locates the threshold to be edited.</li>
+<li>The admin enters a new numeric threshold.</li>
+<li>The admin clicks the &quot;Done&quot; button.</li>
+<li>The system validates the data.</li>
+<li>The system saves the new threshold value.</li>
+</ol>
+</li>
+<li><strong>Exception scenario:</strong>
+<ul>
+<li>The data provided is invalid.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Disable Threshold</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the &quot;Setup Thresholds” step of the setup, disables a previously configured threshold.</li>
+<li><strong>Trigger:</strong> The admin switches off the threshold of a resource.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>At least one resource has a threshold.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected threshold value is removed.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Setup Thresholds&quot; step page.</li>
+<li>The admin locates the threshold to be disabled.</li>
+<li>The admin switches off the threshold of a resource.</li>
+<li>The admin clicks the &quot;Done&quot; button.</li>
+<li>The system validates the data.</li>
+<li>The system removes the threshold.</li>
+</ol>
+</li>
+<li><strong>Exception scenario:</strong>
+<ul>
+<li>The data provided is invalid.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="management-of-the-household-users">Management of the household users<a href="#management-of-the-household-users" class="hash-link" aria-label="Direct link to Management of the household users" title="Direct link to Management of the household users">​</a></h3>
+<ol>
+<li>
+<p><strong>Add New Household Users</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the &quot;Create Household Users” step of the setup, creates a household user account by providing a name, password, and a token to be recognized by the smart furniture hookups.</li>
+<li><strong>Trigger:</strong> The authenticated admin accesses the platform while on the “Create Household Users&quot; step of the setup.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>The admin knows the household user&#x27;s token.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>A new user account is created.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Household Users&quot; step during setup.</li>
+<li>The admin clicks “Add New User.”</li>
+<li>The system opens a household user creation form.</li>
+<li>The admin is prompted to enter the username, password, and token.</li>
+<li>The system validates the data.</li>
+<li>The system creates a new user.</li>
+</ol>
+</li>
+<li><strong>Exception scenarios:</strong>
+<ul>
+<li>If the entered name already exists, the system displays an error message requesting a different username.</li>
+<li>If required fields are missing or invalid, the system prompts the admin to correct the details before proceeding.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Edit User</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the &quot;Create Users” step of the setup, modifies a previously created user by changing its name, password, or token.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Edit” button of a user in the list of users.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>At least one user has already been created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected user is updated with the new properties.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Users&quot; step during setup.</li>
+<li>The admin locates the user to be edited in the list.</li>
+<li>The admin clicks on the &quot;Edit&quot; button/icon associated with that user.</li>
+<li>The system opens an edit form pre-populated with the user’s current details.</li>
+<li>The admin updates the user’s name and/or password.</li>
+<li>The admin submits the changes by clicking the “Done&quot; button.</li>
+<li>The system validates the updated information.</li>
+<li>The system updates the user’s details and updates the user list to reflect the edit.</li>
+</ol>
+</li>
+<li><strong>Exception scenarios:</strong>
+<ul>
+<li>If the entered name already exists, the system displays an error message requesting a different username.</li>
+<li>If required fields are missing or invalid, the system prompts the admin to correct the details before proceeding.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Delete User</strong></p>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while in the &quot;Create Users” step of the setup, deletes an existing user.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Delete” button of a user in the list of users.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated and in the setup process.</li>
+<li>At least one user has already been created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The selected user account is removed from the system.</li>
+<li>The user no longer appears in the list.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Create Users&quot; step during setup.</li>
+<li>The admin locates the user to be deleted in the list.</li>
+<li>The admin clicks on the &quot;Delete&quot; button/icon associated with that user.</li>
+<li>The system prompts the admin for confirmation.</li>
+<li>The admin confirms the deletion.</li>
+<li>The system validates the confirmation and deletes the user account.</li>
+<li>The system updates the user list to reflect the removal.</li>
+</ol>
+</li>
+<li><strong>Exception scenario:</strong>
+<ul>
+<li>The admin cancels the deletion prompt and no changes are made.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="settings-use-cases">Settings Use Cases<a href="#settings-use-cases" class="hash-link" aria-label="Direct link to Settings Use Cases" title="Direct link to Settings Use Cases">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="management-of-admin-account">Management of Admin Account<a href="#management-of-admin-account" class="hash-link" aria-label="Direct link to Management of Admin Account" title="Direct link to Management of Admin Account">​</a></h3>
+<ol>
+<li><strong>Edit Password</strong>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin, while on the &quot;Account” page, modifies their own password.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Change Password” button.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin is authenticated.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The admin&#x27;s password is updated.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Account” page.</li>
+<li>The admin clicks on the “Change Password” button.</li>
+<li>The system opens an edit form.</li>
+<li>The admin is prompted to enter the new password.</li>
+<li>The system validates the data.</li>
+<li>The system updates the admin&#x27;s password.</li>
+</ol>
+</li>
+<li><strong>Exception scenario:</strong>
+<ul>
+<li>If required fields are missing or invalid, the system prompts the admin to correct the details before proceeding.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Reset Password</strong>
+<ul>
+<li><strong>Actor:</strong> Admin</li>
+<li><strong>Description:</strong> The admin resets their password using a reset code.</li>
+<li><strong>Trigger:</strong> The admin clicks the “Reset Password” button.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The admin knows the reset password code.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The admin&#x27;s password is updated.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The admin accesses the &quot;Reset Password” page.</li>
+<li>The admin is prompted to enter the new password and the reset code.</li>
+<li>The system validates the data.</li>
+<li>The system updates the admin&#x27;s password.</li>
+</ol>
+</li>
+<li><strong>Exception scenario:</strong>
+<ul>
+<li>If required fields are missing or invalid, the system prompts the admin to correct the details before proceeding.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="export">Export<a href="#export" class="hash-link" aria-label="Direct link to Export" title="Direct link to Export">​</a></h3>
+<ol>
+<li>
+<p><strong>Export the Map</strong></p>
+<ul>
+<li><strong>Actor:</strong> User</li>
+<li><strong>Description:</strong> The user, while in the “Export” section of the Settings page, exports the current map by downloading it to their local system.</li>
+<li><strong>Trigger:</strong> The user clicks the “Export Map” button in the “Export” section of the Settings page.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The user is authenticated.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The map is downloaded to the user’s local system.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The user accesses the “Export” section of the Settings page.</li>
+<li>The user clicks the “Export Map” button.</li>
+<li>The system prompts the user to download the generated SVG file.</li>
+<li>The user downloads the SVG file.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Export the Smart Furniture Hookups</strong></p>
+</li>
+</ol>
+<ul>
+<li><strong>Actor:</strong> User</li>
+<li><strong>Description:</strong> The user, while in the “Export” section of the Settings page, exports the current hookups data by downloading them to their local system.</li>
+<li><strong>Trigger:</strong> The user clicks the “Export Smart Furniture Hookups Details” button in the “Export” section of the Settings page.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The user is authenticated.</li>
+<li>At least one smart furniture hookup is created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>A JSON file containing an array of all smart hookup objects is downloaded to the user’s local system.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The user accesses the “Export” section of the Settings page.</li>
+<li>The user clicks the “Export Smart Furniture Hookups Details” button.</li>
+<li>The system serializes the records into a structured JSON format.</li>
+<li>The system prompts the user to download the generated JSON file.</li>
+<li>The user downloads the JSON file.</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dashboard-use-cases">Dashboard Use Cases<a href="#dashboard-use-cases" class="hash-link" aria-label="Direct link to Dashboard Use Cases" title="Direct link to Dashboard Use Cases">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="filter">Filter<a href="#filter" class="hash-link" aria-label="Direct link to Filter" title="Direct link to Filter">​</a></h3>
+<ol>
+<li><strong>Filter Utility Consumptions</strong>
+<ul>
+<li><strong>Actor:</strong> User</li>
+<li><strong>Description:</strong> The user filters utility consumption data by selecting a specific household user.</li>
+<li><strong>Trigger:</strong> The user clicks the “Filter” button and chooses a household user.</li>
+<li><strong>Preconditions:</strong>
+<ul>
+<li>The user is authenticated.</li>
+<li>At least one household user has already been created.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong>
+<ul>
+<li>The utility consumption display is limited to the data belonging to the selected household user.</li>
+</ul>
+</li>
+<li><strong>Main Success Scenario:</strong>
+<ol>
+<li>The user accesses a page that displays utility consumption data.</li>
+<li>The user clicks the “Filter” button.</li>
+<li>The system opens a list of household users.</li>
+<li>The user locates and clicks on the desired household user.</li>
+<li>The system applies the filter and refreshes the display to show only that household user’s consumption data.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/analysis/business_requirements.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ecodocumentation/docs/category/analysis"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Analysis</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#use-cases-platform-setup" class="table-of-contents__link toc-highlight">Use Cases Platform Setup</a><ul><li><a href="#admin-authentication" class="table-of-contents__link toc-highlight">Admin Authentication</a></li><li><a href="#floor-plan-step" class="table-of-contents__link toc-highlight">Floor plan step</a></li><li><a href="#navigation-between-setup-steps" class="table-of-contents__link toc-highlight">Navigation Between Setup Steps</a></li><li><a href="#zone-management" class="table-of-contents__link toc-highlight">Zone management</a></li><li><a href="#smart-furniture-hookups-management" class="table-of-contents__link toc-highlight">Smart Furniture Hookups Management</a></li><li><a href="#set-the-thresholds" class="table-of-contents__link toc-highlight">Set the thresholds</a></li><li><a href="#management-of-the-household-users" class="table-of-contents__link toc-highlight">Management of the household users</a></li></ul></li><li><a href="#settings-use-cases" class="table-of-contents__link toc-highlight">Settings Use Cases</a><ul><li><a href="#management-of-admin-account" class="table-of-contents__link toc-highlight">Management of Admin Account</a></li><li><a href="#export" class="table-of-contents__link toc-highlight">Export</a></li></ul></li><li><a href="#dashboard-use-cases" class="table-of-contents__link toc-highlight">Dashboard Use Cases</a><ul><li><a href="#filter" class="table-of-contents__link toc-highlight">Filter</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ecodocumentation/docs/intro">SPE Report</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 E.C.O. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
