@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-analysis/functional_requirements" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Functional Requirements | E.C.O.</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://rares-vsl.github.io/ecodocumentation/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://rares-vsl.github.io/ecodocumentation/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://rares-vsl.github.io/ecodocumentation/docs/analysis/functional_requirements"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Functional Requirements | E.C.O."><meta data-rh="true" name="description" content="Account management"><meta data-rh="true" property="og:description" content="Account management"><link data-rh="true" rel="icon" href="/ecodocumentation/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://rares-vsl.github.io/ecodocumentation/docs/analysis/functional_requirements"><link data-rh="true" rel="alternate" href="https://rares-vsl.github.io/ecodocumentation/docs/analysis/functional_requirements" hreflang="en"><link data-rh="true" rel="alternate" href="https://rares-vsl.github.io/ecodocumentation/docs/analysis/functional_requirements" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Functional Requirements","item":"https://rares-vsl.github.io/ecodocumentation/docs/analysis/functional_requirements"}]}</script><link rel="stylesheet" href="/ecodocumentation/assets/css/styles.98b37c95.css">
+<script src="/ecodocumentation/assets/js/runtime~main.455070be.js" defer="defer"></script>
+<script src="/ecodocumentation/assets/js/main.e7a54a64.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/ecodocumentation/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/ecodocumentation/"><div class="navbar__logo"><img src="/ecodocumentation/img/logo.svg" alt="E.C.O." class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/ecodocumentation/img/logo.svg" alt="E.C.O." class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">E.C.O.</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/ecodocumentation/docs/intro">Report</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://rares-vsl.github.io/ecodocumentation/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/ecodocumentation/docs/intro">Introduction</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/ecodocumentation/docs/analysis/ubiquitous_language">Domain analysis</a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ecodocumentation/docs/analysis/ubiquitous_language">Ubiquitous Language</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ecodocumentation/docs/analysis/business_requirements">Business Requirements</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ecodocumentation/docs/analysis/functional_requirements">Functional Requirements</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ecodocumentation/docs/analysis/event_storming">event_storming</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/ecodocumentation/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Domain analysis</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Functional Requirements</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Functional Requirements</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="account-management">Account management<a href="#account-management" class="hash-link" aria-label="Direct link to Account management" title="Direct link to Account management">​</a></h2>
+<ol>
+<li>The system shall include one default administrator account to manage the platform</li>
+<li>The system shall allow administrators to create, update, and delete household user accounts.</li>
+<li>The system shall allow household users to edit their own account information.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-stories">User stories<a href="#user-stories" class="hash-link" aria-label="Direct link to User stories" title="Direct link to User stories">​</a></h3>
+<ol>
+<li>
+<p><strong>Create Household User Account</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to create new household user accounts,<br>
+<!-- -->So that they can access the platform.</p>
+</li>
+<li>
+<p><strong>Edit Household User Account</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to edit existing household user accounts,<br>
+<!-- -->So that I can update their details when necessary.</p>
+</li>
+<li>
+<p><strong>Delete Household User Account</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to delete household user accounts when needed,<br>
+<!-- -->So that I can keep the user list organized.</p>
+</li>
+<li>
+<p><strong>Edit Own Account Information</strong><br>
+<!-- -->As a <strong>household user</strong>,<br>
+<!-- -->I want to edit my account information,<br>
+<!-- -->So that I can update my personal details.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="authentication">Authentication<a href="#authentication" class="hash-link" aria-label="Direct link to Authentication" title="Direct link to Authentication">​</a></h2>
+<ol>
+<li>The system has to provide login and logout.</li>
+<li>The system shall allow the admin log in using pre-configured credentials.</li>
+<li>The system shall provide a password reset mechanism for administrators.</li>
+<li>The system shall allow admin to edit their own password.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>User stories</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>Log in with Pre-configured Admin Credentials</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to log in to the system using pre-configured credentials,<br>
+<!-- -->So that I can access the administrative features.</p>
+</li>
+<li>
+<p><strong>User Login with Personal Credentials</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to log in to the system with my credentials,<br>
+<!-- -->So that I can access the platform.</p>
+</li>
+<li>
+<p><strong>User Logout</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to log out of the system when I&#x27;m done,<br>
+<!-- -->So that my session is securely terminated.</p>
+</li>
+<li>
+<p><strong>Admin Password Reset</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to reset my password if I forget it,<br>
+<!-- -->So that I can regain access to my account.</p>
+</li>
+<li>
+<p><strong>Admin Password Update</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to edit my password,<br>
+<!-- -->So that I can securely update my login credentials and maintain account security.</p>
+</li>
+<li>
+<p><strong>Admin Edits User Password</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to edit a user&#x27;s password,<br>
+<!-- -->So that I can help users regain access to their accounts and maintain account security.</p>
+</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setup">Setup<a href="#setup" class="hash-link" aria-label="Direct link to Setup" title="Direct link to Setup">​</a></h2>
+<ol>
+<li>The system shall allow administrators to upload a digital floor plan of the household.</li>
+<li>The system shall allow administrators to define, edit, and delete zones on the floor plan.</li>
+<li>The system shall allow administrators to add, edit, and remove smart furniture hookups within each zone.</li>
+<li>Associate hookup to zone</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>User stories</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>Upload Household Floor Plan</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to upload a file of the household floor plan,<br>
+<!-- -->So that it can serve as the base for the map and interactive map.</p>
+</li>
+<li>
+<p><strong>Create Floor Plan Zones</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to create zones on the floor plan,<br>
+<!-- -->So that I can define different household areas.</p>
+</li>
+<li>
+<p><strong>Edit Existing Zones</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to edit existing zones,<br>
+<!-- -->So that I can make adjustments when needed.</p>
+</li>
+<li>
+<p><strong>Delete Zones</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to delete zones,<br>
+<!-- -->So that I can remove areas that are no longer relevant.</p>
+</li>
+<li>
+<p><strong>Add Smart Furniture Hookups</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to add smart furniture hookups to zones,<br>
+<!-- -->So that utility consumption can be tracked.</p>
+</li>
+<li>
+<p><strong>Edit Smart Furniture Hookups</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to edit existing smart furniture hookups,<br>
+<!-- -->So that they reflect the current setup.</p>
+</li>
+<li>
+<p><strong>Delete Smart Furniture Hookups</strong><br>
+<!-- -->As an <strong>admin</strong>,<br>
+<!-- -->I want to delete smart furniture hookups,<br>
+<!-- -->So that outdated or unused ones are removed from the system.</p>
+</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dashboard">Dashboard<a href="#dashboard" class="hash-link" aria-label="Direct link to Dashboard" title="Direct link to Dashboard">​</a></h2>
+<ol>
+<li>The system shall display an interactive map showing all defined zones and smart furniture hookups.</li>
+<li>The system shall show the current status for each hookup.</li>
+<li>The system shall display real-time utility consumption.</li>
+<li>The system shall provide historical consumption data.</li>
+<li>The system shall provide consumption forecasts based on historical data.</li>
+<li>The system shall allow filtering of consumption data by user and zone.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>User stories</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>View Interactive Map Overview</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to view the interactive map with all zones and smart furniture hookups,<br>
+<!-- -->So that I can get an overview of the household’s status.</p>
+</li>
+<li>
+<p><strong>See Smart Furniture Hookup Status</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to see the status of each smart furniture hookup,<br>
+<!-- -->So that I know which ones are currently active and how much they are supplying.</p>
+</li>
+<li>
+<p><strong>View Real-Time Utility Consumption</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to view real-time utility consumption,<br>
+<!-- -->So that I can monitor current usage.</p>
+</li>
+<li>
+<p><strong>Filter Utility Consumption</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to filter utility consumption through user filters,<br>
+<!-- -->So that I can analyze individual usage patterns.</p>
+</li>
+<li>
+<p><strong>View Consumption Per Zone</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to view utility consumption per zone,<br>
+<!-- -->So that I can see the distributions across the household.</p>
+</li>
+<li>
+<p><strong>Access Historical Consumption Data</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to access historical consumption data,<br>
+<!-- -->So that I can analyze past trends.</p>
+</li>
+<li>
+<p><strong>View Consumption Forecasts</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to view forecasts,<br>
+<!-- -->So that I can plan for future usage.</p>
+</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="alert">Alert<a href="#alert" class="hash-link" aria-label="Direct link to Alert" title="Direct link to Alert">​</a></h2>
+<ol>
+<li>The system shall allow to define custom thresholds for alerts.</li>
+<li>The system shall notify users when consumption exceeds a set threshold.</li>
+<li>The system shall notify users when forecasted consumption exceeds a set threshold.</li>
+<li>The system shall maintain a history of all alerts generated.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>User stories</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>Receive Consumption Alerts</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to receive alerts when consumption exceeds a set threshold,<br>
+<!-- -->So that I can take immediate action.</p>
+</li>
+<li>
+<p><strong>Configure Custom Thresholds</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to set custom thresholds,<br>
+<!-- -->So that alerts match my personal needs.</p>
+</li>
+<li>
+<p><strong>View Alert History</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to view a history of past alerts,<br>
+<!-- -->So that I can identify recurring issues.</p>
+</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="zones">Zones<a href="#zones" class="hash-link" aria-label="Direct link to Zones" title="Direct link to Zones">​</a></h2>
+<ol>
+<li>The system shall allow users to access a detailed view of each zone and its hookups.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>User stories</summary><div><div class="collapsibleContent_i85q"><ol>
+<li><strong>Access Detailed Zone View</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to access a detailed view of a specific zone, including its smart furniture hookups,<br>
+<!-- -->So that I can focus on a particular area.</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data">Data<a href="#data" class="hash-link" aria-label="Direct link to Data" title="Direct link to Data">​</a></h2>
+<ol>
+<li>The system shall send, receive, and process data from smart furniture hookups</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>User stories</summary><div><div class="collapsibleContent_i85q"><ol>
+<li><strong>Send, Receive, and Process Smart Furniture Hookups Data</strong><br>
+<!-- -->As a <strong>system</strong>,<br>
+<!-- -->I want to send, receive, and process data from smart furniture hookups,<br>
+<!-- -->So that users can access accurate utility consumption metrics.</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="export">Export<a href="#export" class="hash-link" aria-label="Direct link to Export" title="Direct link to Export">​</a></h2>
+<ol>
+<li>The system shall allow the export of the floor plan.</li>
+<li>The system shall allow export data related to smart furniture hookups.</li>
+</ol>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>User stories</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>
+<p><strong>Export Map</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to export the map,<br>
+<!-- -->So that I can reference it outside the platform.</p>
+</li>
+<li>
+<p><strong>Export Smart Furniture Hookups Data</strong><br>
+<!-- -->As a <strong>user</strong>,<br>
+<!-- -->I want to export data regarding smart furniture hookups,<br>
+<!-- -->So that I can reference it outside the platform.</p>
+</li>
+</ol></div></div></details></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/ecodocumentation/docs/analysis/business_requirements"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Business Requirements</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ecodocumentation/docs/analysis/event_storming"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">event_storming</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#account-management" class="table-of-contents__link toc-highlight">Account management</a><ul><li><a href="#user-stories" class="table-of-contents__link toc-highlight">User stories</a></li></ul></li><li><a href="#authentication" class="table-of-contents__link toc-highlight">Authentication</a></li><li><a href="#setup" class="table-of-contents__link toc-highlight">Setup</a></li><li><a href="#dashboard" class="table-of-contents__link toc-highlight">Dashboard</a></li><li><a href="#alert" class="table-of-contents__link toc-highlight">Alert</a></li><li><a href="#zones" class="table-of-contents__link toc-highlight">Zones</a></li><li><a href="#data" class="table-of-contents__link toc-highlight">Data</a></li><li><a href="#export" class="table-of-contents__link toc-highlight">Export</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/ecodocumentation/docs/intro">SPE Report</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 E.C.O. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
