@@ -5,34 +5,34 @@ sidebar_position: 2
 
 # Business requirements
 
-1. The administrator must be able to **configure a house** by defining the floor plan, zones, and smart furniture hookup.
-2. The platform must display an **interactive map** with real-time status of a smart furniture hookup.
-3. The platform must provide **real-time consumption metrics** of current utility consumption.
+1. The administrator must be able to **configure a house** by defining the floor plan, zones, and smart furniture hookups.
+2. The platform must display an **interactive map** with real-time status of smart furniture hookups.
+3. The platform must provide **real-time consumption metrics** of current utilities consumption.
 4. The platform must notify users when **forecasted consumption exceeds** predefined thresholds through an automatic alert system.
-5. The platform must promptly notify users when **consumption exceeds** predefined thresholds through an automatic alert system.
-6. The platform must allow **filtering of consumption** charts by individual users.
-7. The platform must allow access the consumption of **individual zones**
+5. The platform must notify users when **consumption exceeds** predefined thresholds through an automatic alert system.
+6. The platform must allow **filtering of consumption** data by individual users.
+7. The platform must allow managing the consumption of **individual zones**.
 8. The platform must allow users to **export** both the data related to **devices** and the **map**.
 
 ## Use Cases Platform Setup
 ### Admin Authentication
 1. **Admin Authentication (First-Time Access)**
    - **Actor:** Admin
-   - **Description:**  The admin authenticates to access the system for the first time.
-   - **Trigger:** The user accesses the platform without an existing authentication session.
+   - **Description:**  The admin supply the credentials to access the system for the first time.
+   - **Trigger:** The admin accesses the platform without an existing authentication session.
    - **Preconditions:**
      - The platform is accessed for the first time.
      - A pre-configured admin account with known credentials exists.
    - **Postconditions:**
      - The admin is successfully authenticated and can proceed with the system setup process.
    - **Main Success Scenario:**
-     1. The user navigates to the login page.
-     2. The user enters the pre-configured credentials.
-     3. The user submits the login form.
+     1. The admin navigates to the login page.
+     2. The admin enters the pre-configured credentials.
+     3. The admin submits the login form.
      4. The system validates the credentials.
      5. The system authenticates the user and establishes an authenticated session.
    - **Exception Scenario:**
-     - **Step 4:** If the user enters invalid credentials, the system displays an error message and prompts the user to re-enter the information.
+     - **Step d:** If the user enters invalid credentials, the system displays an error message and prompts the user to re-enter the information.
 
 2. **Logout during setup**
    - **Actor:** Admin
@@ -67,7 +67,7 @@ sidebar_position: 2
      6. The admin confirms the upload.
      7. The system saves the floor plan.
    - **Exception Scenario:**
-   - **Step 4:** If the uploaded file is not in SVG format or is invalid, the system displays an error message and prompts the admin to upload a valid file.
+     - **Step d:** If the uploaded file is not in SVG format or is invalid, the system displays an error message and prompts the admin to upload a valid file.
 
 2. **Reupload Floor Plan**
    - **Actor:** Admin
@@ -91,27 +91,10 @@ sidebar_position: 2
    - **Exception Scenario:**
      - **Step 4:** If the uploaded file is not in SVG format or is invalid, the system displays an error message and prompts the admin to upload a valid file.
 
-### Navigation Between Setup Steps
-1. **Navigate Between Setup Steps**
-   - **Actor:** Admin
-   - **Description:** The admin moves back and forth between setup sections without losing progress.
-   - **Trigger:** The admin clicks the “Previous” button or on a step on the step indicator.
-   - **Preconditions:**
-     - The admin is authenticated and in the setup process.
-   - **Postconditions:**
-     - The system navigates to the selected setup step.
-     - Data from previous steps is preserved and editable.
-   - **Main Success Scenario:**
-     1. The admin clicks the “Previous” button.
-     2. The system navigates to the selected step.
-     3. Previously entered data is still available for review or modification.
-   - **Exception Scenario:**
-     - If there is unsaved information in the current step, it will be lost. The system displays a warning.
-
 ### Zone management
 1. **Create Zone on Floor Plan**
    - **Actor:** Admin
-   - **Description:** The admin creates zones by drawing polygons on the uploaded floor plan, naming each zone and customizing its color.
+   - **Description:** The admin creates zones by drawing polygon on the uploaded floor plan, naming each zone and customizing its color.
    - **Trigger:** The authenticated admin accesses the platform while on the “Create Zones” step of the setup.
    - **Preconditions:**
      - The admin is authenticated and in the setup process.
@@ -133,9 +116,9 @@ sidebar_position: 2
        - The admin selects a different color.
        - If the polygon was already drawn, it updates with the new color.
        - Continue from Step 8.
-   - **At Step 5 – The admin resizes or deletes the polygon to draw a new one:**
-     - The admin adjusts or removes the current polygon.
-     - Return to Step 5.
+     - **At Step 5 – The admin resizes or deletes the polygon to draw a new one:**
+       - The admin adjusts or removes the current polygon.
+       - Return to Step 5.
    - **Exception Scenarios:**
      - If the drawn zone overlaps with an existing one, the system displays an error and prevents confirmation until the overlap is resolved.
      - The admin discards the zone. The system returns to the "Create Zones" step page.
@@ -246,7 +229,6 @@ sidebar_position: 2
      7. The system updates the hookups list and the interactive map to reflect the deletion.
 
 ### Set the thresholds
-
 1. **Setup Consumption Thresholds**
    - **Actor:** Admin
    - **Description:** The admin, while in the “Setup Thresholds” step of the setup, configures alert thresholds for each utility (electricity, gas, water) by enabling a threshold for a resource and entering a numeric limit.
@@ -260,10 +242,9 @@ sidebar_position: 2
      2. The admin toggles the threshold switch for a resource.
      3. The system enables the input field for the selected resource.
      4. The admin enters a numeric threshold.
-     5. The admin repeats steps 2–4 for each applicable resource.
-     6. The admin clicks the "Done" button.
-     7. The system validates the data.
-     8. The system saves the thresholds.
+     5. The admin clicks the "Done" button.
+     6. The system validates the data.
+     7. The system saves the thresholds.
    - **Alternative Path:**
      - The admin sets the threshold only for a subset of the available resources.
    - **Exception Scenario:**
@@ -313,14 +294,14 @@ sidebar_position: 2
    - **Trigger:** The authenticated admin accesses the platform while on the “Create Household Users" step of the setup.
    - **Preconditions:**
      - The admin is authenticated and in the setup process.
-     - The admin knows the household user's token.
+     - The admin knows the household user's username.
    - **Postconditions:**
      - A new user account is created.
    - **Main Success Scenario:**
      1. The admin accesses the "Create Household Users" step during setup.
      2. The admin clicks “Add New User.”
      3. The system opens a household user creation form.
-     4. The admin is prompted to enter the username, password, and token.
+     4. The admin is prompted to enter the username and password.
      5. The system validates the data.
      6. The system creates a new user.
    - **Exception scenarios:**
@@ -404,6 +385,7 @@ sidebar_position: 2
      4. The system updates the admin's password.
    - **Exception scenario:**
      - If required fields are missing or invalid, the system prompts the admin to correct the details before proceeding.
+
 ### Export
 1. **Export the Map**
    - **Actor:** User
@@ -420,20 +402,20 @@ sidebar_position: 2
      4. The user downloads the SVG file.
 
 2. **Export the Smart Furniture Hookups**
-- **Actor:** User
-- **Description:** The user, while in the “Export” section of the Settings page, exports the current hookups data by downloading them to their local system.
-- **Trigger:** The user clicks the “Export Smart Furniture Hookups Details” button in the “Export” section of the Settings page.
-- **Preconditions:**
-  - The user is authenticated.
-  - At least one smart furniture hookup is created.
-- **Postconditions:**
-  - A JSON file containing an array of all smart hookup objects is downloaded to the user’s local system.
-- **Main Success Scenario:**
-  1. The user accesses the “Export” section of the Settings page.
-  2. The user clicks the “Export Smart Furniture Hookups Details” button.
-  3. The system serializes the records into a structured JSON format.
-  4. The system prompts the user to download the generated JSON file.
-  5. The user downloads the JSON file.
+   - **Actor:** User
+   - **Description:** The user, while in the “Export” section of the Settings page, exports the current hookups data by downloading them to their local system.
+   - **Trigger:** The user clicks the “Export Smart Furniture Hookups Details” button in the “Export” section of the Settings page.
+   - **Preconditions:**
+     - The user is authenticated.
+     - At least one smart furniture hookup is created.
+   - **Postconditions:**
+     - A JSON file containing an array of all smart hookup objects is downloaded to the user’s local system.
+   - **Main Success Scenario:**
+     1. The user accesses the “Export” section of the Settings page.
+     2. The user clicks the “Export Smart Furniture Hookups Details” button.
+     3. The system serializes the records into a structured JSON format.
+     4. The system prompts the user to download the generated JSON file.
+     5. The user downloads the JSON file.
 
 ## Dashboard Use Cases
 ### Filter
