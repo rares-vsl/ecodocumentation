@@ -10,7 +10,9 @@ sidebar_position: 3
 2. The system shall allow administrators to create, update, and delete household user accounts.
 3. The system shall allow household users to edit their own account information.
 
-### User stories
+<details>
+<summary>User stories</summary>
+
 1. **Create Household User Account**\
 As an **admin**,\
 I want to create new household user accounts,\
@@ -30,6 +32,7 @@ So that I can keep the user list organized.
 As a **household user**,\
 I want to edit my account information,\
 So that I can update my personal details.
+</details>
 
 ## Authentication
 1. The system has to provide login and logout.
@@ -72,7 +75,7 @@ So that I can help users regain access to their accounts and maintain account se
 </details>
 
 ## Setup
-1. The system shall allow administrators to upload a digital floor plan of the household.
+1. The system shall allow administrators to upload a digital floor plan of the household during the setup of the platform.
 2. The system shall allow administrators to define, edit, and delete zones on the floor plan.
 3. The system shall allow administrators to add, edit, and remove smart furniture hookups within each zone.
 4. Associate hookup to zone
@@ -179,7 +182,7 @@ I want to receive alerts when consumption exceeds a set threshold,\
 So that I can take immediate action.
 
 2. **Configure Custom Thresholds**\
-As a **user**,\
+As an **admin**,\
 I want to set custom thresholds,\
 So that alerts match my personal needs.
 
@@ -188,7 +191,6 @@ As a **user**,\
 I want to view a history of past alerts,\
 So that I can identify recurring issues.
 </details>
-
 
 ## Zones
 1. The system shall allow users to access a detailed view of each zone and its hookups.

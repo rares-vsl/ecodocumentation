@@ -17,7 +17,7 @@ The following main domain events were identified during our Event Storming sessi
 Here, we identify the Timeline, User Actions, external systems, and business policy that constitute the
 system's interactions:
 
-![](../img/event_storming/main_domain_events.png)
+![](../img/event_storming/es2.png)
 
 ## Step 3: Aggregates
 Next, we identify aggregates, which bundle related domain events and commands by entity:

@@ -89,7 +89,7 @@ sidebar_position: 2
      6. The admin confirms the upload.
      7. The system saves the floor plan.
    - **Exception Scenario:**
-     - **Step 4:** If the uploaded file is not in SVG format or is invalid, the system displays an error message and prompts the admin to upload a valid file.
+     - **Step d:** If the uploaded file is not in SVG format or is invalid, the system displays an error message and prompts the admin to upload a valid file.
 
 ### Zone management
 1. **Create Zone on Floor Plan**
@@ -266,7 +266,7 @@ sidebar_position: 2
      5. The system validates the data.
      6. The system saves the new threshold value.
    - **Exception scenario:**
-     - The data provided is invalid.
+     - The data provided is invalid. The system displays an error message and prevents saving.
 
 3. **Disable Threshold**
    - **Actor:** Admin
@@ -284,13 +284,11 @@ sidebar_position: 2
      4. The admin clicks the "Done" button.
      5. The system validates the data.
      6. The system removes the threshold.
-   - **Exception scenario:**
-     - The data provided is invalid.
 
 ### Management of the household users
 1. **Add New Household Users**
    - **Actor:** Admin
-   - **Description:** The admin, while in the "Create Household Users” step of the setup, creates a household user account by providing a name, password, and a token to be recognized by the smart furniture hookups.
+   - **Description:** The admin, while in the "Create Household Users” step of the setup, creates a household user account by providing a username to be recognized by the smart furniture hookups, and a password.
    - **Trigger:** The authenticated admin accesses the platform while on the “Create Household Users" step of the setup.
    - **Preconditions:**
      - The admin is authenticated and in the setup process.
@@ -310,7 +308,7 @@ sidebar_position: 2
 
 2. **Edit User**
    - **Actor:** Admin
-   - **Description:** The admin, while in the "Create Users” step of the setup, modifies a previously created user by changing its name, password, or token.
+   - **Description:** The admin, while in the "Create Users” step of the setup, modifies a previously created user by changing its username or password.
    - **Trigger:** The admin clicks the “Edit” button of a user in the list of users.
    - **Preconditions:**
      - The admin is authenticated and in the setup process.
